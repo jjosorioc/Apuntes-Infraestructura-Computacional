@@ -1,4 +1,4 @@
-package lab1;
+package laboratorios.lab1;
 
 import java.util.concurrent.ThreadLocalRandom;
 
