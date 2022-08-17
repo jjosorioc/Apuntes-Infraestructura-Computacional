@@ -1,3 +1,4 @@
+package lab1;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class MaximoMatriz extends Thread{

@@ -1,3 +1,4 @@
+package lab1;
 
 public class EjThreads01 extends Thread {
 	public void run()
