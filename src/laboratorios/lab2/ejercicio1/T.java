@@ -1,4 +1,4 @@
-package laboratorios.lab2;
+package laboratorios.lab2.ejercicio1;
 
 import java.util.concurrent.ThreadLocalRandom;
 
