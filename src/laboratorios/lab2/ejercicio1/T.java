@@ -36,7 +36,7 @@ public class T extends Thread {
 
 
     public void run() {
-        this.mayorFila();
+        mayorFila();
     }
 
     private synchronized void mayorFila() {
