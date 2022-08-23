@@ -1,4 +1,4 @@
-package lecturas.sincronizacion.eventos.ejemplo;
+package lecturas.sincronizacion.eventos.ejemplo1;
 // En general esta clase se encarga de correr los threads. La implementación es distinta, pero hace lo mismo que ejemplos anteriores
 
 

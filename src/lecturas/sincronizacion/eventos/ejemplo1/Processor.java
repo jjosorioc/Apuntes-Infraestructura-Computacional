@@ -1,4 +1,4 @@
-package lecturas.sincronizacion.eventos.ejemplo;
+package lecturas.sincronizacion.eventos.ejemplo1;
 
 import java.util.LinkedList;
 import java.util.Random;
