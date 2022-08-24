@@ -1,8 +1,5 @@
 package ejerciciosEnClase.lectores_redactores;
 
-/**
- * clase de lectores.
- */
 public class Lector extends Thread {
 
     private Archivo archivo;

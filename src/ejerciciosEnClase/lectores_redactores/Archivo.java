@@ -3,7 +3,7 @@ package ejerciciosEnClase.lectores_redactores;
 /**
  * ejemplo visto en clase de Lectores-Redactores.
  * Este ejemplo es el que vimos antes de cambiar
- * lo de la inalidad de los lectores y redactores.
+ * lo de la inanicion de los lectores y redactores.
  */
 public class Archivo {
     

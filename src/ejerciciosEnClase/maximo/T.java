@@ -1,4 +1,4 @@
-package ejerciciosEnClase;
+package ejerciciosEnClase.maximo;
 
 public class T extends Thread {
     private static Maximo oMax = new Maximo();
