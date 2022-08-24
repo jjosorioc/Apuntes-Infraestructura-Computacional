@@ -10,6 +10,9 @@ public class Archivo {
     private int nRedactores = 0;
     private int nLectores = 0;
 
+    /**
+     * deja "entrar" lectores.
+     */
     public synchronized void entrarLector() {
         while (nRedactores != 0) {
             try {
@@ -21,6 +24,9 @@ public class Archivo {
         nLectores++;
     }
 
+    /**
+     * deja "salir" lectores.
+     */
     public synchronized void salirLector() {
         nLectores--;
         if (nLectores == 0) {
@@ -28,6 +34,9 @@ public class Archivo {
         }
     }
 
+    /**
+     * deja "entrar" redactores.
+     */
     public synchronized void entrarRedactor() {
         while (nRedactores != 0 || nLectores != 0) {
             try {
@@ -39,6 +48,9 @@ public class Archivo {
         nRedactores++;
     }
 
+    /**
+     * deja "salir" redactores.
+     */
     public synchronized void salirRedactor() {
         nRedactores--;
         notifyAll();
