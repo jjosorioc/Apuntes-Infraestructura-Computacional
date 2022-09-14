@@ -1,4 +1,4 @@
-package ejerciciosEnClase.productor_consumidor;
+package ejerciciosenclase.productor_consumidor;
 
 public class Consumidor extends Thread {
 

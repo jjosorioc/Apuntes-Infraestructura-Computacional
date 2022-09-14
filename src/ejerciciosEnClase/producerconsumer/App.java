@@ -1,4 +1,4 @@
-package ejerciciosEnClase.producerconsumer;
+package ejerciciosenclase.producerconsumer;
 
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;

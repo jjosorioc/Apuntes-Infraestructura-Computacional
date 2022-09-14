@@ -1,4 +1,4 @@
-package ejerciciosEnClase.maximo;
+package ejerciciosenclase.maximo;
 
 public class Maximo {
     private int maximo = 0;

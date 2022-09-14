@@ -1,4 +1,4 @@
-package ejerciciosEnClase.esperaactiva;
+package ejerciciosenclase.esperaactiva;
 
 import java.util.Scanner;
 

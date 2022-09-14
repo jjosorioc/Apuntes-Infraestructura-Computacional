@@ -1,4 +1,4 @@
-package ejerciciosEnClase.lectores_redactores;
+package ejerciciosenclase.lectores_redactores;
 
 /**
  * ejemplo visto en clase de Lectores-Redactores.

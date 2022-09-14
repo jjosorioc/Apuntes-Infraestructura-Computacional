@@ -1,4 +1,4 @@
-package ejerciciosEnClase.lectores_redactores;
+package ejerciciosenclase.lectores_redactores;
 
 public class Redactor extends Thread {
 

@@ -1,4 +1,4 @@
-package ejerciciosEnClase.esperaactiva;
+package ejerciciosenclase.esperaactiva;
 
 public class App {
     public static void main(String[] args) throws InterruptedException {

@@ -1,4 +1,4 @@
-package ejerciciosEnClase.productor_consumidor;
+package ejerciciosenclase.productor_consumidor;
 
 import java.util.ArrayList;
 
