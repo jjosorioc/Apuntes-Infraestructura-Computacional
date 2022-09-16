@@ -19,6 +19,7 @@ public class Servidor {
         try {
             ss = new ServerSocket(PUERTO);
         } catch (Exception e) {
+            e.printStackTrace();
             System.out.println("Error al crear el socket");
             System.exit(-1);
         }

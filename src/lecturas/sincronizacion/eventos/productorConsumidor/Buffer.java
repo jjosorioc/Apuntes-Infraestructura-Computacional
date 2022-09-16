@@ -3,12 +3,12 @@ package lecturas.sincronizacion.eventos.productorConsumidor;
 import java.util.ArrayList;
 
 public class Buffer {
-    private ArrayList buff;
+    private ArrayList<Integer> buff;
     private int n;
 
     public Buffer(int n) {
         this.n = n;
-        buff = new ArrayList();
+        buff = new ArrayList<Integer>();
     }
 
     public synchronized void almacenar(Integer i) {

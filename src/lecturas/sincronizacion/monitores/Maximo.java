@@ -8,6 +8,7 @@ public class Maximo {
     }
 
     public synchronized void anotar(int n) {
+        System.out.println("Thread " + n + " is in anotar");
         if (n > maximo)
             maximo = n;
     }

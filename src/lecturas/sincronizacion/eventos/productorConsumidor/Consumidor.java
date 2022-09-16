@@ -1,5 +1,6 @@
 package lecturas.sincronizacion.eventos.productorConsumidor;
 
+@SuppressWarnings("unused")
 public class Consumidor extends Thread  {
 
     private Buffer buffer;

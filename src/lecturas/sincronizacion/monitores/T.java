@@ -16,7 +16,8 @@ public class T extends Thread {
     public T(int num) {
         this.num = num;
     }
-
+    
+    @Override
     public void run() {
         oMax.anotar(num);
     }

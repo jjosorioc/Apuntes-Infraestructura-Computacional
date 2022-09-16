@@ -11,7 +11,7 @@ public class T extends Thread {
     /**
      * Para imprimir los nums del 1-10 volví este método estático
      */
-    private synchronized static void sumarLista() {
+    private synchronized  void sumarLista() {
         Lista.sumar();
     }
 

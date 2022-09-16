@@ -23,6 +23,7 @@ public class Processor {
             notify();
             Thread.sleep(5000);
         }
+        scanner.close();
 
     }
 }
