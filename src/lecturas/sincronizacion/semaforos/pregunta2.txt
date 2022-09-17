@@ -1,0 +1,72 @@
+b después de a 
+a después de c
+i después de g y h
+d e f en exclusión mutua
+
+
+bDespuesA = 0
+aDespuesC = 0
+iDespuesG = 0
+iDespuesH = 0
+mutex = 1
+
+
+-- Code
+a ()
+{
+    p(aDespuesC)
+    // Ejecuta código
+    v(bDespuesA)
+}
+
+b ()
+{
+    p(bDespuesA)
+    // Ejecuta código
+}
+
+c ()
+{
+    // Ejecuta codigo
+    v(aDespuesC)
+}
+
+d ()
+{
+    p(mutex)
+    // Ejecuta código
+    v(mutex)
+}
+
+e ()
+{
+    p(mutex)
+    // Ejecuta código
+    v(mutex)
+}
+
+f ()
+{
+    p(mutex)
+    // Ejecuta código
+    v(mutex)
+}
+
+g ()
+{
+    // Ejecuta código
+    v(iDespuesG)
+}
+
+h ()
+{
+    // Ejecuta código
+    v(iDespuesH)
+}
+
+i ()
+{
+    p(iDespuesG)
+    p(iDespuesH)
+    // Ejecuta código
+}

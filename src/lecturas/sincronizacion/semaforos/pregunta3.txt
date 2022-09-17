@@ -1,0 +1,60 @@
+A1 solito
+B1 solito
+
+A2 depende de B1
+C1 depende de B1
+
+B2 depende de C1
+
+C2 depende de A2
+
+-- Código --
+
+A2DespuesB1 = 0
+C1DespuesB1 = 0
+
+B2DespuesC1 = 0
+
+C2DespuesA2 = 0
+
+
+
+-- Methods
+
+A1()
+{
+    // Ejecuta código
+}
+
+A2()
+{
+    p(A2DespuesB1)
+    // Ejecuta código
+    v(C2DespuesA2)
+}
+
+B1()
+{
+    // Ejecuta código
+    v(A2DespuesB1)
+    v(C1DespuesB1)
+}
+
+B2()
+{
+    p(B2DespuesC1)
+    // Ejecuta código
+}
+
+C1()
+{
+    p(C1DespuesB1)
+    // Ejecuta código
+    v(B2DespuesC1)
+}
+
+C2()
+{
+    p(C2DespuesA2)
+    // Ejecuta código
+}
