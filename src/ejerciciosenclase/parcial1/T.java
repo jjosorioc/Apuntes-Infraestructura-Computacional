@@ -44,12 +44,12 @@ public class T extends Thread {
     public void run() {
 
         if (this.tipo.equals("cliente")) {
-            buffer.almacenarSolicitud(this.mensaje);
+            
 
-            synchronized (buffer) {
+            synchronized (servidor) {
                 try {
-
-                    buffer.wait();
+                    buffer.almacenarSolicitud(this.mensaje);
+                    servidor.wait();
                     System.out.println(
                             "Mensaje inicial: " + this.mensaje + " " + buffer.retirarSolicitud());
                 } catch (InterruptedException e) {
@@ -59,17 +59,15 @@ public class T extends Thread {
 
 
 
-        } else {
+        } else { // Es un servidor
             mensaje = buffer.retirarSolicitud();
             this.traduccion();
 
             buffer.almacenarSolicitud(this.mensaje);
 
-            synchronized (buffer) {
-                buffer.notify();
+            synchronized (this) {
+                this.notify();
             }
-
-
 
         }
 
@@ -83,6 +81,7 @@ public class T extends Thread {
 
 
     public static void main(String[] args) {
+
 
         for (int i = 0; i < 10; i++) {
             T cliente = new T("cliente", "Hola" + i);
