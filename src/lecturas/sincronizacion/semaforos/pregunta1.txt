@@ -1,0 +1,70 @@
+d se ejecuta antes que a y antes que g
+b e y h se ejecutan en exclusión mutua
+i se debe ejecutar después de c y f
+
+
+dAntesA = 0
+dAntesG = 0
+iDespuesC = 0 
+iDespuesF = 0
+mutex = 1
+
+
+
+-- Code
+a ()
+{
+    p(dAntesA)
+}
+
+b ()
+{
+    p(mutex)
+    // Ejecuta código
+    v(mutex)
+}
+
+c ()
+{
+    // Ejecuta código
+    v(iDespuesC)
+}
+
+d ()
+{
+    // Ejecuta código
+    v(dAntesA)
+    v(dAntesG)
+}
+
+e ()
+{
+    p(mutex)
+    // Ejecuta código
+    v(mutex)
+}
+
+f ()
+{
+    // Ejecuta código
+    v(iDespuesF)
+}
+
+g ()
+{
+    p(dAntesG)
+}
+
+h ()
+{
+    p(mutex)
+    // Ejecuta código
+    v(mutex)
+}
+
+i ()
+{
+    p(iDespuesC)
+    p(iDespuesF)
+    // Ejecuta código
+}
